@@ -1,11 +1,6 @@
 {
   "name": "@rbxts/synapse-types",
 	"types": "include/index.d.ts",
-  "scripts": {
-    "build": "rbxtsc",
-    "watch": "rbxtsc -w",
-    "prepublishOnly": "pnpm run build"
-  },
   "files": [
 		"include/*.d.ts"
 	],
