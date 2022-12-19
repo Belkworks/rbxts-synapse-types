@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/synapse-types",
-	"types": "include/**.d.ts",
+	"types": "include/index.d.ts",
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
