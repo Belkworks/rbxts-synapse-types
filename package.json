@@ -1,8 +1,8 @@
 {
   "name": "@rbxts/synapse-types",
-	"types": "include/index.d.ts",
+	"types": "types/index.d.ts",
   "files": [
-		"include/*.d.ts"
+		"types/*.d.ts"
 	],
   "devDependencies": {
     "@rbxts/compiler-types": "2.0.2-types.0",
