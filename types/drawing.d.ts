@@ -1,19 +1,3 @@
-// Enums
-
-declare enum XAlignment {
-	Left,
-	Right,
-	Center,
-}
-
-declare enum YAlignment {
-	Top,
-	Bottom,
-	Center,
-}
-
-// Drawing Classes
-
 interface DrawEntryDynamic {
 	Visible: boolean;
 	ZIndex: number;

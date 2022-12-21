@@ -1,9 +1,3 @@
-declare enum CFrameRotationType {
-	CameraRelative,
-	TargetRelative,
-	Ignore,
-}
-
 interface PointInstance extends Point {
 	readonly WorldPos: Vector3;
 	Offset: CFrame;

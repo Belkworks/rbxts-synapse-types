@@ -5,3 +5,4 @@
 /// <reference path="drawing.d.ts" />
 /// <reference path="font.d.ts" />
 /// <reference path="timer.d.ts" />
+/// <reference path="enums.d.ts" />
