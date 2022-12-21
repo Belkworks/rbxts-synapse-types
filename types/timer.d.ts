@@ -11,8 +11,8 @@ interface Timer {
 	Hours(): number;
 }
 
-interface TimerStatic {
+interface TimerConstructor {
 	new (): Timer;
 }
 
-declare const Timer: TimerStatic;
+declare const Timer: TimerConstructor;
