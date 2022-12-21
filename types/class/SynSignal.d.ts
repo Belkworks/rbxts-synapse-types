@@ -1,5 +1,9 @@
+interface SynConnection {
+	Disconnect(): void;
+}
+
 interface SynSignal<T extends unknown[] = []> {
-	Connect(callback: (...args: T) => void): void;
+	Connect(callback: (...args: T) => void): SynConnection;
 	Wait(): LuaTuple<T>;
 	Fire(...args: T): void;
 
