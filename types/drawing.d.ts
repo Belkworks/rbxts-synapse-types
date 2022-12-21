@@ -18,8 +18,8 @@ interface TextDynamic extends DrawEntryDynamic {
 	YAlignment: YAlignment;
 }
 
-interface TextDynamicStatic {
+interface TextDynamicConstructor {
 	new (): TextDynamic;
 }
 
-declare const TextDynamic: TextDynamicStatic;
+declare const TextDynamic: TextDynamicConstructor;
