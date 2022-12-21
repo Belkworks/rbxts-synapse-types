@@ -4,8 +4,7 @@
 
 /// <reference path="global/index.d.ts" />
 /// <reference path="point/index.d.ts" />
+/// <reference path="drawing/index.d.ts" />
+/// <reference path="class/index.d.ts" />
 
-/// <reference path="drawing.d.ts" />
-/// <reference path="font.d.ts" />
-/// <reference path="timer.d.ts" />
 /// <reference path="enums.d.ts" />
