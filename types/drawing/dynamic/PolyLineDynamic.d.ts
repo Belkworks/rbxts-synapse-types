@@ -1,6 +1,6 @@
 interface PolyLineDynamic extends DrawEntryDynamic {
 	Thickness: number;
-	// FillType: PolyLineFillType;
+	FillType: PolyLineFillType;
 	Points: Point[];
 
 	ReTriangulate(): void;

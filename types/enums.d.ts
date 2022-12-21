@@ -16,5 +16,9 @@ declare enum YAlignment {
 	Center,
 }
 
-// unknown
-declare enum PolyLineFillType {}
+declare enum PolyLineFillType {
+	None,
+	Closed,
+	ConvexFilled,
+	Triangulated,
+}
