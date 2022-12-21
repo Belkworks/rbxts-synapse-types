@@ -5,4 +5,12 @@
 interface Point {
 	readonly ScreenPos: Vector2;
 	readonly Visible: boolean;
+	HasColorOverride: boolean;
+	ColorOverride: Color3;
+	ColorOverrideOpacity: number;
+
+	/**
+	 * Write-only.
+	 */
+	ColorOverrideVec3: Vector3;
 }
