@@ -2,3 +2,4 @@
 /// <reference path="Duration.d.ts" />
 /// <reference path="Stopwatch.d.ts" />
 /// <reference path="SynSignal.d.ts" />
+/// <reference path="Value.d.ts" />
