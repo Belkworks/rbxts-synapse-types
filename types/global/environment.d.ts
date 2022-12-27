@@ -6,8 +6,27 @@ declare function getreg(): Record<string, unknown> & unknown[];
 
 declare function getgc(include_tables?: boolean): unknown[];
 
-// TODO: proper options
-declare function filtergc(type: string, options: object, return_one?: boolean): unknown[] | undefined;
+type FunctionFilterOpts = {
+	Name?: string;
+	Constants?: unknown[];
+	Upvalues?: unknown[];
+	IgnoreSyn?: boolean;
+	Proto?: unknown;
+	Environment?: unknown;
+};
+
+type TableFilterOpts = {
+	Keys: unknown[];
+	Values: unknown[];
+	KeyValuePairs: { [key: string]: unknown };
+	Metatable: unknown;
+};
+
+declare function filtergc(type: "function", options: FunctionFilterOpts, return_one?: false): Callback[];
+declare function filtergc(type: "function", options: FunctionFilterOpts, return_one: true): Callback | undefined;
+
+declare function filtergc(type: "table", options: TableFilterOpts, return_one?: false): object[];
+declare function filtergc(type: "table", options: TableFilterOpts, return_one: true): object | undefined;
 
 declare function getinstances(): readonly Instance[];
 
