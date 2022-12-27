@@ -1,4 +1,4 @@
-export namespace debug {
+declare namespace debug {
 	function getupvalues(fi: Callback | number): defined[];
 
 	function getupvalue(fi: Callback | number, upvalue: number): unknown | undefined;
