@@ -16,10 +16,10 @@ type FunctionFilterOpts = {
 };
 
 type TableFilterOpts = {
-	Keys: unknown[];
-	Values: unknown[];
-	KeyValuePairs: { [key: string]: unknown };
-	Metatable: unknown;
+	Keys?: unknown[];
+	Values?: unknown[];
+	KeyValuePairs?: { [key: string]: unknown };
+	Metatable?: unknown;
 };
 
 declare function filtergc(type: "function", options: FunctionFilterOpts, return_one?: false): Callback[];
