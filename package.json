@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/synapse-types",
   "types": "types/index.d.ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "files": [
     "types/*.d.ts"
   ],
