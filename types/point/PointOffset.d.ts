@@ -1,4 +1,4 @@
-interface PointOffset {
+interface PointOffset extends Point {
 	Point: Point;
 	Offset: Vector2;
 }
