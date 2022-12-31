@@ -5,7 +5,7 @@ interface Timer {
 	readonly TimeLeft: Duration;
 	readonly LastElapsed: Duration;
 
-	OnElapsed: SynSignal;
+	OnElapsed: SynSignal<[delta: Duration]>;
 }
 
 interface TimerConstructor {
