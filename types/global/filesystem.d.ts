@@ -26,9 +26,22 @@ declare function delfolder(path: string): void;
 
 declare function getsynasset(path: string): string;
 
-// TODO: saveinstance
-// bool saveinstance(instance: Instance | table, options?: table) [yields]
 
-// TODO: saveplace
-// bool saveplace(options?: table) [yields]
-// Equivalent to saveinstance(game, options).
+type SaveInstanceOptions = {
+    FileName?: string;
+    IgnoreArchivable?: boolean;
+    SavePlayerCharacters?: boolean;
+    SavePlayers?: boolean;
+    DisableCompression?: boolean;
+    Decompile?: boolean;
+    DecompileJobless?: boolean;
+    SaveNonCreatable?: boolean;
+    NilInstances?: boolean;
+    CopyToClipboard?: boolean;
+    IgnoreList?: Instance[];
+};
+
+declare function saveinstance(instance: Instance | Record<string, unknown>, options?: SaveInstanceOptions): boolean;
+
+declare function saveplace(options?: SaveInstanceOptions): boolean;
+
