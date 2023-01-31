@@ -1,15 +1,20 @@
-declare function getrawmetatable(obect: unknown): LuaMetatable<unknown> | undefined;
+/*
+Table APIs
+*/
 
-declare function setrawmetatable(object: unknown, target: LuaMetatable<unknown>): void;
+declare function getrawmetatable(object: any): table | undefined;
 
-declare function setreadonly(table: object, value: boolean): void;
+declare function setrawmetatable(object: any, target: table): void;
 
-declare function setuntouched(table: object, value: boolean): void;
+declare function setreadonly(table: table, value: boolean): void;
 
-declare function isuntouched(table: object): boolean;
+declare function setuntouched(target: Callback | thread | table, value: boolean): void;
 
-declare function makewritable(table: object): void;
+declare function isuntouched(target: Callback | thread | table): boolean;
 
-declare function makereadonly(table: object): void;
+declare function makewritable(table: table): void;
 
-declare function isreadonly(table: object): boolean;
+declare function makereadonly(table: table): void;
+
+declare function isreadonly(table: table): boolean;
+

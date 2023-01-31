@@ -16,4 +16,7 @@ declare namespace debug {
 	function setmetatable(object: unknown, target: LuaMetatable<unknown>): void;
 
 	function getregistry(): Record<string, unknown> & unknown[];
+
+	function getinfo(f: Callback | number, what?: string): defined;
+
 }
